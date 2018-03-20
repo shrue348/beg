@@ -1,0 +1,92 @@
+
+@media (max-width: 1255px) {
+
+	.main_menu__soc_title { display: none; }
+	.main_banner__title { font-size: 38px; }
+	.widget_life__title { margin-right: -15px; padding-right: 30px; }
+
+	.main_preims { -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: center; justify-content: center; }
+	.main_preims__item { -ms-flex: 0 0 30%; flex: 0 0 30%;  }
+	.main_menu__link { font-size: 14px; }
+
+
+	
+
+
+}
+
+@media (max-width: 1155px) {
+	.wrapper { padding: 0 10px; }
+	.widget_life__title { margin-right: -10px; }
+
+
+	.main_blue__title,
+	.main_blue__map_title,
+	.widget_life__title,
+	.main_news__title { font-size: 32px; }
+
+	.header { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+	.header__slogan { -ms-flex-order: 3; order: 3; -ms-flex: 0 0 100%; flex: 0 0 100%; font-size: 24px; margin-bottom: 15px; }
+	.header__slogan br { display: none; }
+
+	.main_banner { margin-bottom: 70px; }
+	.main_lists > .col-md-6 { width: 100%;}
+	.main_list-starts { margin-bottom: 37px; }
+
+	.main_blue .col-md-7 { width: 100%; margin-bottom: 65px;}
+	.main_blue .col-md-5 { width: 100%; }
+	.main_blue__map_title { text-align: left; margin-left: -18px; padding-left: 18px; font-size: 36px; text-transform: uppercase; font-weight: bold; background-color: #e42e30; padding-right: 7%; -webkit-clip-path: polygon(0% 0%, 100% 0%, 92% 100%, 0% 100%); clip-path: polygon(0% 0%, 100% 0%, 92% 100%, 0% 100%); margin-bottom: 24px; display: inline-block; position: relative; z-index: 3;}
+	.main_blue__map { margin-top: -85px; height: 310px; }
+
+	.main_widgets > .wrapper > .row { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap;  }
+	.main_widgets > .wrapper > .row > .col-md-4:nth-child(3) { -ms-flex-order: 1; order: 1; -ms-flex: 0 0 100%; flex: 0 0 100%; }
+	.widget_life { min-height: 100px; }
+
+	.main_news__list .col-md-4 { width: 100%; margin-bottom: 46px; }
+	.main_news__list .col-md-4:last-child { margin-bottom: 0; }
+	.main_news__list .news_item { margin-bottom: 0; }
+
+	.main_menu__link { font-size: 12px; }
+
+
+
+
+
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.main_banner__title { font-size: 27.5px; }
+
+
+
+}
+			 
+@media (max-width: 767px) {
+	.main_preims__item { -ms-flex: 0 0 20%; flex: 0 0 20%; }
+	.main_banner__title { font-size: 27.5px; }
+	
+}
+
+@media (max-width: 680px) {
+	
+}
+
+ 
+@media (max-width: 480px) {
+	
+
+}
+
+@media (max-width: 340px) {
+
+
+}
+
+
+
+
+
+
