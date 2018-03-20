@@ -47,18 +47,9 @@
 	.main_news__list .news_item { margin-bottom: 0; }
 
 	.main_menu__link { font-size: 12px; }
-
-
-
-
-
-
-
-}
-
-
-@media (min-width: 768px) and (max-width: 979px) {
 	.main_banner__title { font-size: 27.5px; }
+
+
 
 
 
