@@ -149,12 +149,14 @@
 	.main_list_records__date { flex: 0 0 100%; margin-left: 32px; }
 	.main_list_records__distance:before { margin-right: 15px; }
 	.main_list_records__item { margin-bottom: 25px; }
+	.main_list__list { padding: 168px 20px 25px 8px; }
 
 }
 
 @media (max-width: 340px) {
 	.main_list_records__time { flex: 0 0 100%; }
 	.main_list_records__distance { flex: 0 0 100%; }
+
 
 }
 
