@@ -367,7 +367,7 @@ body { background: url(../img/header_bg.png) no-repeat scroll center top transpa
 .main_preims__desc { padding: 0 10px; line-height: 1.35; max-width: 180px; margin: 0 auto;}
 
 .main_lists { margin-bottom: -65px; position: relative; z-index: 2; }
-.main_list { padding: 42px 0 0 30px; position: relative; }
+.main_list { padding: 42px 0 0 30px; position: relative; margin-left: auto; margin-right: auto; max-width: 900px;}
 .main_list__title { position: absolute; z-index: 2; top: 0; left: -37px; box-sizing: border-box; color: #fff; font-size: 36px; text-transform: uppercase; padding-top: 19px; font-weight: bold; width: 590px; height: 210px; line-height: 1.2; }
 .main_list__title-starts { background: url(../img/main_list-starts.png) no-repeat scroll center top transparent; padding-left: 242px; }
 .main_list__title-records { background: url(../img/main_list-records.png) no-repeat scroll center top transparent; padding-left: 293px; }
@@ -464,27 +464,24 @@ body { background: url(../img/header_bg.png) no-repeat scroll center top transpa
 .news_item__bottom { text-align: center; padding: 28px 0;}
 
 .news_list { margin-bottom: -145px; position: relative; z-index: 3; }
-.news_item { margin-bottom: 50px }
+.news_list .col-md-4 { margin-bottom: 50px }
 .news_list > .row { display: flex; flex-wrap: wrap; justify-content: center; }
 
-.news_header { margin-top: 70px; margin-bottom: 50px; }
+.news_header { margin-top: 62px; margin-bottom: 16px; }
 .news_h1 { color: #fff; float: left; }
 
 .news_pagi { float: right; white-space: nowrap; }
 .news_pagi__arrow,
 .news_pagi__year,
-.news_pagi__deliver { border: 2px solid #fff; border-radius: 41px; height: 41px; line-height: 41px; color: #fff; display: inline-block; margin-left: 10px; font-weight: 600; font-size: 16px; padding: 0 19px; text-align: center; }
+.news_pagi__deliver { border: 2px solid #fff; border-radius: 36px; height: 36px; line-height: 36px; color: #fff; display: inline-block; margin-left: 2px; font-weight: 600; font-size: 16px; padding: 0 18px; text-align: center; }
 .news_pagi__arrow { padding: 0 0; width: 41px; }
 .news_pagi__arrow:hover,
 .news_pagi__year:hover { background-color: rgba(255,255,255,0.3); }
 .news_pagi__year.active { background-color: #fff; color: #000; }
 
-
-
-
-
-
-
+.news_pagi__deliver { padding: 0 29px; }
+.news_pagi__arrow i:before { padding: 0; }
+.news_pagi__arrow { width: 2.3em; }
 
 
 
