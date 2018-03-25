@@ -68,74 +68,84 @@
 	</nav>
 </div>
 
-<div class="wrapper">
-	<div class="article">
+
+<div class="contacts">
+	<div class="wrapper">
 		<div class="row">
-			<div class="col-md-9">
+			
+			<div class="col-md-5 off-7">
 
-				<div class="article_wrap">
-					<h1> Заголовок страницы</h1>
-					<div class="preheader">Наши отчаянные ребята сегодня финишировали на безумном Ice Onego 2017. Ветра такой силы на обратном пути ещё никто из них не встречал! Сносило всех и каждого!</div>
-					<div class="txt">
-						<p>Второе Дыхание – это уникальный спортивный проект охватывающий и связывающий в себе несколько различных, но родственных направлений спортивного движения. В группу нашей компании входит специализированный спортивный магазин, представляющий широкий ассортимент и профессиональный сервис по выбору спортивной экипировки. Мы развиваем беговой клуб, отвечающий всем требования создания полноценного тренировочного процесса. Дополняет картину спортивной формулы «Второе Дыхание» интернет портал с передовым контентом, предлагающий нашим читателям исключительный, востребованный материал.</p>
+				<div class="contacts_wrap">
+					<h1>Контакты клуба</h1>
 
-						<p>Нашу <a href="">ссылка</a> объединяют общие интересы и увлечения, спорт тесно переплетается с нашей жизнью и является неотъемлемой частью благополучия. Превыше всего мы ставим интересы спортивного общества и готовы работать на производство здоровья людей не покладая рук. Второе Дыхание – это уникальный спортивный проект охватывающий и связывающий в себе несколько различных, но родственных направлений спортивного движения. В группу нашей компании входит специализированный спортивный магазин, представляющий широкий ассортимент и профессиональный сервис по выбору спортивной экипировки. Мы развиваем беговой клуб, отвечающий всем требования создания полноценного тренировочного процесса. Дополняет картину спортивной формулы «Второе Дыхание» интернет портал с передовым контентом, предлагающий нашим читателям исключительный, востребованный материал.</p>
+					<div id="contacts_map" class="contacts_map"></div>
 
-						<p>Нашу <a href="">просмотренная ссылка</a> объединяют общие интересы и увлечения, спорт тесно переплетается с нашей жизнью и является неотъемлемой частью благополучия. Превыше всего мы ставим интересы спортивного общества и готовы работать </p>
+					<script>
+
+						ymaps.ready(function () {
+							function init () {
+						    	var myMap = new ymaps.Map("contacts_map", {
+						            center: [59.949967, 30.247987],
+						            controls: [],
+						            zoom: 10
+						        }, {
+						            searchControlProvider: 'yandex#search'
+						        });
+
+
+							    
+								    var myPlacemarkWithContent = new ymaps.Placemark([59.949967, 30.247987], {
+							            balloonContent: '<b>Беговой клуб</b><br>Описание'
+							        }, {
+							            iconLayout: 'default#imageWithContent',
+							            iconImageHref: '/img/map_marker_main.png',
+							            iconImageSize: [47, 77],
+							            iconImageOffset: [-14, -77]
+							        });
+
+							       myMap.geoObjects.add(myPlacemarkWithContent);
+							    
+							}
+
+							init()
+						})
+					</script>
+
+
+					<div class="contacts_item">
+						<div class="contacts_item__left">
+							<img src="img/icon_loc.png" alt="Как нас найти" class="contacts_item__icon">
+						</div>
+						<div class="contacts_item__right">
+							<div class="contacts_item__title">Как нас найти</div>
+							<div class="contacts_item__desc">Санкт-Петербург, Манежная площадь дом 2, "Зимний стадион"</div>
+						</div>
 					</div>
-
-
-
-
-					<table class="article_table">
-						<thead>
-							<tr>
-								<th>#</th>
-								<th>Фамилия Имя</th>
-								<th>Время</th>
-								<th>Личный рекорд</th>
-								<th>Место</th>
-								<th>Примечание</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Алексей Горбачев</td>
-								<td>33.34</td>
-								<td>-21"</td>
-								<td>-</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td>|</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td>-</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td>|||</td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="contacts_item">
+						<div class="contacts_item__left">
+							<img src="img/icon_phone_2.png" alt="Как с нами связаться" class="contacts_item__icon">
+						</div>
+						<div class="contacts_item__right">
+							<div class="contacts_item__title">Как с нами связаться</div>
+							<div class="contacts_item__desc">+7 (952) 236-71-85</div>
+						</div>
+					</div>
+					<div class="contacts_item">
+						<div class="contacts_item__left">
+							<img src="img/icon_mail.png" alt="Задать вопрос" class="contacts_item__icon">
+						</div>
+						<div class="contacts_item__right">
+							<div class="contacts_item__title">Задать вопрос</div>
+							<div class="contacts_item__desc">
+								Руководитель - Олег Бабчин
+								<a href="mailto:oleg@vdsport.ru">oleg@vdsport.ru</a>
+							</div>
+						</div>
+					</div>
 				</div>
-
+					
 			</div>
+
 		</div>
 	</div>
 </div>
