@@ -6,7 +6,6 @@
 		<div class="row">
 			
 			<div class="col-md-5 off-7">
-
 				<div class="contacts_wrap">
 					<h1>Контакты клуба</h1>
 
@@ -16,27 +15,27 @@
 
 						ymaps.ready(function () {
 							function init () {
-						    	var myMap = new ymaps.Map("contacts_map", {
-						            center: [59.949967, 30.247987],
-						            controls: [],
-						            zoom: 10
-						        }, {
-						            searchControlProvider: 'yandex#search'
-						        });
+					    	var myMap = new ymaps.Map("contacts_map", {
+				            center: [59.949967, 30.247987],
+				            controls: [],
+				            zoom: 10
+				        }, {
+				            searchControlProvider: 'yandex#search'
+				        });
 
 
-							    
-								    var myPlacemarkWithContent = new ymaps.Placemark([59.949967, 30.247987], {
-							            balloonContent: '<b>Беговой клуб</b><br>Описание'
-							        }, {
-							            iconLayout: 'default#imageWithContent',
-							            iconImageHref: '/img/map_marker_main.png',
-							            iconImageSize: [47, 77],
-							            iconImageOffset: [-14, -77]
-							        });
+						    
+						    var myPlacemarkWithContent = new ymaps.Placemark([59.949967, 30.247987], {
+					            balloonContent: '<b>Беговой клуб</b><br>Описание'
+					        }, {
+					            iconLayout: 'default#imageWithContent',
+					            iconImageHref: '/img/map_marker_main.png',
+					            iconImageSize: [47, 77],
+					            iconImageOffset: [-14, -77]
+					        });
 
-							       myMap.geoObjects.add(myPlacemarkWithContent);
-							    
+					      myMap.geoObjects.add(myPlacemarkWithContent);
+
 							}
 
 							init()
@@ -44,38 +43,40 @@
 					</script>
 
 
-					<div class="contacts_item">
-						<div class="contacts_item__left">
-							<img src="img/icon_loc.png" alt="Как нас найти" class="contacts_item__icon">
+					<div class="contacts_item__list">
+						<div class="contacts_item">
+							<div class="contacts_item__left">
+								<img src="img/icon_loc.png" alt="Как нас найти" class="contacts_item__icon">
+							</div>
+							<div class="contacts_item__right">
+								<div class="contacts_item__title">Как нас найти</div>
+								<div class="contacts_item__desc">Санкт-Петербург, Манежная площадь дом 2, "Зимний стадион"</div>
+							</div>
 						</div>
-						<div class="contacts_item__right">
-							<div class="contacts_item__title">Как нас найти</div>
-							<div class="contacts_item__desc">Санкт-Петербург, Манежная площадь дом 2, "Зимний стадион"</div>
+						<div class="contacts_item">
+							<div class="contacts_item__left">
+								<img src="img/icon_phone_2.png" alt="Как с нами связаться" class="contacts_item__icon">
+							</div>
+							<div class="contacts_item__right">
+								<div class="contacts_item__title">Как с нами связаться</div>
+								<div class="contacts_item__desc">+7 (952) 236-71-85</div>
+							</div>
 						</div>
-					</div>
-					<div class="contacts_item">
-						<div class="contacts_item__left">
-							<img src="img/icon_phone_2.png" alt="Как с нами связаться" class="contacts_item__icon">
-						</div>
-						<div class="contacts_item__right">
-							<div class="contacts_item__title">Как с нами связаться</div>
-							<div class="contacts_item__desc">+7 (952) 236-71-85</div>
-						</div>
-					</div>
-					<div class="contacts_item">
-						<div class="contacts_item__left">
-							<img src="img/icon_mail.png" alt="Задать вопрос" class="contacts_item__icon">
-						</div>
-						<div class="contacts_item__right">
-							<div class="contacts_item__title">Задать вопрос</div>
-							<div class="contacts_item__desc">
-								Руководитель - Олег Бабчин
-								<a href="mailto:oleg@vdsport.ru">oleg@vdsport.ru</a>
+						<div class="contacts_item">
+							<div class="contacts_item__left">
+								<img src="img/icon_mail.png" alt="Задать вопрос" class="contacts_item__icon">
+							</div>
+							<div class="contacts_item__right">
+								<div class="contacts_item__title">Задать вопрос</div>
+								<div class="contacts_item__desc">
+									Руководитель - Олег Бабчин
+									<a href="mailto:oleg@vdsport.ru">oleg@vdsport.ru</a>
+								</div>
 							</div>
 						</div>
 					</div>
+						
 				</div>
-					
 			</div>
 
 		</div>
