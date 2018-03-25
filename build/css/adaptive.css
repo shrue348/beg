@@ -83,6 +83,23 @@
 	.contacts_item__title { font-weight: bold; }
 
 
+	.article > .wrapper > .row > .col-md-9 { width: 100%; }
+	.article_wrap { margin-left: 10px; margin-right: 10px; margin-top: 440px; }
+	.article__img { float: none; margin-top: -100%; margin-left: -10px; max-height: 400px;}
+	.article h1 { margin-right: 0; margin-left: -40px; font-size: 32px; }
+
+
+	.stat_lists > .col-md-6 { width: 100%; }
+	.main_list-women { margin-bottom: 37px; }
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -92,6 +109,8 @@
 	.main_blue .col-md-5 { width: 100%; }
 	.main_blue__map_title { text-align: left; margin-left: -18px; padding-left: 18px; font-size: 36px; text-transform: uppercase; font-weight: bold; background-color: #e42e30; padding-right: 7%; -webkit-clip-path: polygon(0% 0%, 100% 0%, 92% 100%, 0% 100%); clip-path: polygon(0% 0%, 100% 0%, 92% 100%, 0% 100%); margin-bottom: 24px; display: inline-block; position: relative; z-index: 3;}
 	.main_blue__map { margin-top: -85px; height: 310px; }
+
+	.article_table td:last-child { display: none; }
 }
 
 			 
@@ -131,7 +150,6 @@
 	.main_preims__item:nth-child(3) { -ms-flex: 0 0 100%; flex: 0 0 100%; }
 
 	.main_list__list { padding: 168px 20px 25px 23px; }
-
 	.main_list__title { font-size: 28px; padding-top: 36px; }
 	.main_list__title-records { padding-left: 254px; }
 	.main_list__title-starts {  }
@@ -150,6 +168,7 @@
 	.news_pagi { text-align: center; } 
 	.main_list-records .main_list__list {  padding: 172px 23px 25px 23px;	}
 	.news_h1 { text-align: center; font-size: 28px; }
+	.stat_h1 { text-align: center; font-size: 28px; }
 
 	.footer_wrap__center { display: none; }
 	.footer_wrap__left { -ms-flex: 0 0 100%; flex: 0 0 100%; text-align: center; }
@@ -162,6 +181,17 @@
 
 	.contacts h1 { padding-left: 15px; margin-left: -30px; font-size: 28px; }
 
+
+	.article_slider { padding: 20px 20px 80px; }
+	.article_slider .slick-arrow { top: initial; bottom: 0;}
+	.article_slider .slick-arrow.left { left: 50%; margin-left: -50px; }
+	.article_slider .slick-arrow.right { right: 50%; margin-right: -50px; }
+
+
+	.main_list__item-top { font-size: 14px; }
+	.main_list__item-bottom { font-size: 14px; }
+	
+
 }
 
 @media (max-width: 680px) {
@@ -169,11 +199,18 @@
 	.main_list__title-records { background: url(../img/main_list-records.png) no-repeat scroll left top transparent; }
 	.main_list__title-starts { background: url(../img/main_list-starts.png) no-repeat scroll left top transparent; }
 
+	.article_wrap { margin-top: 300px; }
+	.article__img { margin-top: -50%; margin-bottom: -80px; }
+	.article h1 { margin-right: -35px; margin-bottom: 40px; }
+
 }
 
 @media (max-width: 510px) {
 	.main_list_records__time:before { margin-right: 10px; }
 	.main_list_records__distance:before { margin-right: 10px; }
+
+
+	.article_wrap { margin-top: 300px; }
 
 }
 
@@ -212,13 +249,24 @@
 	.contacts { margin-top: 355px; }
 	.contacts_map { height: 350px; top: -310px;}
 
-	
+	.article_wrap { margin-top: 250px; }
 
+	.main_list__title-women + .main_list__list { padding-left: 15px; padding-right: 15px; }
+	.main_list__title-men + .main_list__list { padding-left: 15px; padding-right: 15px; }
+	.main_list__title-women,
+	.main_list__title-men { padding-left: 130px; }
+
+	.main_list-women .col-md-4:nth-child(n+2) .main_list_records__distance:before,
+	.main_list-men .col-md-4:nth-child(n+2) .main_list_records__distance:before { content: ''; margin: 0;}
+
+	.main_list-women .col-md-4:nth-child(1) .main_list_records__distance:before,
+	.main_list-men .col-md-4:nth-child(1) .main_list_records__distance:before { position: absolute; left: -39px; top: 0; }
 }
 
 @media (max-width: 340px) {
 	.main_list_records__time { -ms-flex: 0 0 100%; flex: 0 0 100%; }
 	.main_list_records__distance { -ms-flex: 0 0 100%; flex: 0 0 100%; }
+
 
 
 }

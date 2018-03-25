@@ -19,8 +19,15 @@ $(function(){
 			infinite: false,
 
 			prevArrow: '<a class="left carousel-control" href="javascript:;"><i class="icon-angle-left"></i></a>',
-			nextArrow: '<a class="right carousel-control" href="javascript:;"><i class="icon-angle-right"></i></a>'
-
+			nextArrow: '<a class="right carousel-control" href="javascript:;"><i class="icon-angle-right"></i></a>',
+			responsive: [
+		    {
+		      breakpoint: 768,
+		      settings: {
+						slidesToShow: 2
+		      }
+		    }
+		  ]
 		});
 
 
