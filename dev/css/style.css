@@ -316,14 +316,32 @@ body { background: url(../img/header_bg.png) no-repeat scroll center top transpa
 .footer { background: url(../img/footer_bg.png) no-repeat scroll center top transparent; position: relative; z-index: 1; padding-top: 310px; padding-bottom: 25px; }
 .footer_wrap { display: flex; justify-content: space-between; align-items: flex-start; }
 .footer_wrap__left {  }
-.footer_wrap__center {  }
+.footer_wrap__center {
+    border-left: 1px solid #ee6942;
+    border-right: 1px solid #ee6942;
+    flex: 0 0 411px;
+    margin-left: 83px;
+    padding-top: 5px;
+    margin-top: -4px;
+}
 .footer_wrap__right {  }
 
-.footer__logo { margin-bottom: 28px; }
+
+.footer_wrap__center-in { display: flex; }
+.footer_menu { flex: 0 0 50%; padding: 0 20px; box-sizing: border-box; }
+.footer_menu__title { font-size: 16px; font-weight: bold; margin-bottom: 9px; text-transform: uppercase; height: 34px; line-height: 34px; padding: 0 20px; background-color: #fab215; white-space: nowrap; clip-path: polygon(9% 0%, 100% 0%, 91% 100%, 0% 100%);}
+.footer_menu__list { padding: 0 20px; }
+.footer_menu__item { margin-bottom: 4px; }
+.footer_menu__link { font-size: 16px; }
+
+
+.footer__logo { margin-bottom: 28px; margin-top: -5px; }
 .footer__create { font-size: 16px; }
-.footer__phone { text-align: right; font-size: 36px; font-weight: bold; }
-.footer__soc { text-align: right; }
+.footer__phone { text-align: right; font-size: 36px; font-weight: bold; white-space: nowrap; letter-spacing: 2px; margin-bottom: 18px;}
+.footer__soc { text-align: right; margin-bottom: 31px;}
 .footer__date { text-align: right; font-size: 16px; }
+
+.footer .main_menu__soc_item { margin-right: 0; margin-left: 16px; }
 
 
 .main_menu { background-color: #fff; display: flex; justify-content: space-between; }
@@ -334,7 +352,7 @@ body { background: url(../img/header_bg.png) no-repeat scroll center top transpa
 .main_menu__link.active { color: #e62024; }
 .main_menu__soc_title { padding: 0 8px; height: 47px; line-height: 47px; font-size: 16px; text-transform: uppercase; font-weight: bold; display: inline-block;}
 .main_menu__soc_wrap { white-space: nowrap; padding: 0 7px; }
-.main_menu__soc_item { display: inline-block; vertical-align: middle; margin: 7px 9px 0; }
+.main_menu__soc_item { display: inline-block; vertical-align: middle; margin: 6px 9px 0; }
 
 .header__menu_toggle { display: none; }
 .main_menu__overlay { display: none; }
@@ -367,7 +385,7 @@ body { background: url(../img/header_bg.png) no-repeat scroll center top transpa
 .main_preims__desc { padding: 0 10px; line-height: 1.35; max-width: 180px; margin: 0 auto;}
 
 .main_lists { margin-bottom: -65px; position: relative; z-index: 2; }
-.main_list { padding: 42px 0 0 30px; position: relative; margin-left: auto; margin-right: auto; max-width: 900px;}
+.main_list { padding: 42px 0 0 30px; position: relative; margin-left: auto; margin-right: auto; max-width: 800px;}
 .main_list__title { position: absolute; z-index: 2; top: 0; left: -37px; box-sizing: border-box; color: #fff; font-size: 36px; text-transform: uppercase; padding-top: 19px; font-weight: bold; width: 590px; height: 210px; line-height: 1.2; }
 .main_list__title-starts { background: url(../img/main_list-starts.png) no-repeat scroll center top transparent; padding-left: 242px; }
 .main_list__title-records { background: url(../img/main_list-records.png) no-repeat scroll center top transparent; padding-left: 293px; }
@@ -404,7 +422,7 @@ body { background: url(../img/header_bg.png) no-repeat scroll center top transpa
 
 .main_blue { color: #fff; background-color: #3d98d4; padding: 117px 0 84px; margin-top: -65px; position: relative; z-index: 1; }
 .main_blue__title { margin-left: -18px; padding-left: 18px; font-size: 36px; text-transform: uppercase; font-weight: bold; background-color: #ee6942; padding-right: 5%; clip-path: polygon(0% 0%, 100% 0%, 96% 100%, 0% 100%); margin-bottom: 24px; display: inline-block; }
-.main_blue__map_title { text-align: center; font-size: 36px; text-transform: uppercase; font-weight: bold; margin-bottom: 28px; }
+.main_blue__map_title { text-align: center; font-size: 36px; text-transform: uppercase; font-weight: bold; margin-bottom: 28px; overflow: hidden; }
 .main_blue__map { background-color: #fff; height: 271px; }
 .main_blue__map > ymaps { width: 100% !important; }
 
