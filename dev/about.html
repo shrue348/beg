@@ -161,7 +161,6 @@
 						};
 
 						var options = { 
-							responsive: true,
 							maintainAspectRatio: false,
 							cutoutPercentage: 40,
 							legend: {
@@ -182,6 +181,38 @@
 						    type: 'doughnut',
 						    data: data,
 						    options: options
+						})
+					</script>
+
+					<canvas id="chart-about_orange-2" class="about_orange__bubble-2"></canvas>
+
+					<script>
+
+
+						var options2 = { 
+							maintainAspectRatio: false,
+							cutoutPercentage: 40,
+							legend: {
+		
+				        display: true,
+				        position: 'top',
+				        labels: {
+			            fontColor: 'rgb(255, 255, 255)',
+			            fontStyle: 'bold',
+			            padding: 50,
+			            fontSize: 16
+				        }
+					    },
+					    layout: {
+		            
+			        }
+						};
+
+						var ctx = document.getElementById("chart-about_orange-2");
+						var myChart = new Chart(ctx,{
+						    type: 'doughnut',
+						    data: data,
+						    options: options2
 						})
 					</script>
 				</div>

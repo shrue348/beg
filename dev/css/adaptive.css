@@ -259,6 +259,10 @@
 
 	.about_wrap { margin-top: 350px; }
 
+	.about_orange__bubble-2 { display: block !important; width: 100% !important;
+    height: 500px !important;}
+	.about_orange__bubble { display: none !important;  }
+
 }
 
 @media (max-width: 510px) {
@@ -332,6 +336,9 @@
 	.about_stat__title,
 	.about_style__title,
 	.main_blue__map_title { font-size: 24px; }
+
+	.main_list__title.main_list__title-people { padding-left: 120px; }
+	.main_list__about img { width: 110px; top: 20px; left: 5px; }
 }
 
 @media (max-width: 376px) {
