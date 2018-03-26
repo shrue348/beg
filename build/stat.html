@@ -16,7 +16,7 @@
 	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/baguetteBox.min.js"></script>
-	<script src="js/Chart.bundle.min.js"></script>
+	<script src="js/chart.min.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/ready.js"></script>
 
@@ -372,15 +372,68 @@
 					<div class="row">
 
 
-
-
 						<div class="col-md-6">
 							<div class="stat_itogo__item aligncenter">
 								<div class="stat_itogo_item__title">Спортсмен года</div>
 								<img src="img/stat_img_big.png" alt="" class="stat_img mgb20">
 								<div class="stat_orange up block mgb10">Фамилия Имя</div>
 							</div>
+						</div>
 
+						<div class="col-md-6">
+
+							<div class="stat_itogo__item stat_itogo__item-bubble">
+								<div class="stat_itogo_item__title">Состав на конец года</div>
+
+								
+								<canvas id="chart-area" class="stat_itogo__bubble"></canvas>
+
+								<script>
+								var data = {
+									labels: [
+										"мужчин",
+										"женщин"
+									],
+									datasets: [
+									{
+										data: [300, 50],
+										backgroundColor: [
+											"#868dac",
+											"#fab217"
+										],
+										hoverBackgroundColor: [
+											"#b6bdcc",
+											"#fad237"
+										]	
+									}]
+								};
+
+								var options = { 
+									cutoutPercentage:40,
+									legend: {
+								        display: true,
+								        position: 'bottom',
+								        labels: {
+								            fontColor: 'rgb(255, 255, 255)',
+								            fontStyle: 'bold',
+								            padding: 20
+								        }
+								    }
+								};
+
+								// var ctx = document.getElementById("chart-area");
+								// var myChart = new Chart(ctx,{
+								//     type: 'doughnut',
+								//     data: data,
+								//     options: options
+								// })
+
+								</script>
+
+							</div>
+						</div>
+
+						<div class="col-md-6">
 							<div class="stat_itogo__item stat-year">
 								<div class="stat_itogo_item__title">Прогресс года</div>
 								<div class="stat_subtitle">на 21,1 км</div>
@@ -415,139 +468,11 @@
 
 
 
+
+
+
 						<div class="col-md-6">
-
-							<div class="stat_itogo__item">
-								<div class="stat_itogo_item__title">Состав на конец года</div>
-
-								
-								<div id="chart-area" class="stat_itogo__bubble"></div>
-
-<script>
-
-
-		var randomScalingFactor = function() {
-			return Math.round(Math.random() * 100);
-		};
-
-		var config = {
-			type: 'doughnut',
-			data: {
-				datasets: [{
-					data: [
-						randomScalingFactor(),
-						randomScalingFactor(),
-						randomScalingFactor(),
-						randomScalingFactor(),
-						randomScalingFactor(),
-					],
-					backgroundColor: [
-						'#ccc',
-						'#ddd',
-						'#cc0000',
-						'#00cc00',
-						'#0000cc',
-					],
-					label: 'Dataset 1'
-				}],
-				labels: [
-					'Red',
-					'Orange',
-					'Yellow',
-					'Green',
-					'Blue'
-				]
-			},
-			options: {
-				responsive: true,
-				legend: {
-					position: 'top',
-				},
-				title: {
-					display: true,
-					text: 'Chart.js Doughnut Chart'
-				},
-				animation: {
-					animateScale: true,
-					animateRotate: true
-				}
-			}
-		};
-
-		window.onload = function() {
-			var ctx = document.getElementById('chart-area').getContext('2d');
-			window.myDoughnut = new Chart(ctx, config);
-		};
-
-		document.getElementById('randomizeData').addEventListener('click', function() {
-			config.data.datasets.forEach(function(dataset) {
-				dataset.data = dataset.data.map(function() {
-					return randomScalingFactor();
-				});
-			});
-
-			window.myDoughnut.update();
-		});
-
-		var colorNames = Object.keys(window.chartColors);
-		document.getElementById('addDataset').addEventListener('click', function() {
-			var newDataset = {
-				backgroundColor: [],
-				data: [],
-				label: 'New dataset ' + config.data.datasets.length,
-			};
-
-			for (var index = 0; index < config.data.labels.length; ++index) {
-				newDataset.data.push(randomScalingFactor());
-
-				var colorName = colorNames[index % colorNames.length];
-				var newColor = window.chartColors[colorName];
-				newDataset.backgroundColor.push(newColor);
-			}
-
-			config.data.datasets.push(newDataset);
-			window.myDoughnut.update();
-		});
-
-		document.getElementById('addData').addEventListener('click', function() {
-			if (config.data.datasets.length > 0) {
-				config.data.labels.push('data #' + config.data.labels.length);
-
-				var colorName = colorNames[config.data.datasets[0].data.length % colorNames.length];
-				var newColor = window.chartColors[colorName];
-
-				config.data.datasets.forEach(function(dataset) {
-					dataset.data.push(randomScalingFactor());
-					dataset.backgroundColor.push(newColor);
-				});
-
-				window.myDoughnut.update();
-			}
-		});
-
-		document.getElementById('removeDataset').addEventListener('click', function() {
-			config.data.datasets.splice(0, 1);
-			window.myDoughnut.update();
-		});
-
-		document.getElementById('removeData').addEventListener('click', function() {
-			config.data.labels.splice(-1, 1); // remove the label first
-
-			config.data.datasets.forEach(function(dataset) {
-				dataset.data.pop();
-				dataset.backgroundColor.pop();
-			});
-
-			window.myDoughnut.update();
-		});
-	
-
-
-</script>
-
-							</div>
-
-							<div class="stat_itogo__item">
+							<div class="stat_itogo__item stat-pos">
 								<div class="stat_itogo_item__title">Посещаемость года</div>
 
 								<div class="stat_flex mgb20">
@@ -623,7 +548,7 @@
 
 
 						<div class="col-md-6">
-							<div class="stat_itogo__item">
+							<div class="stat_itogo__item stat_itogo__item-yearrun">
 								<div class="stat_itogo_item__title">Пробеги года</div>
 								<div class="stat_subtitle">по участникам из клуба</div>
 
@@ -659,7 +584,7 @@
 							<div class="stat_itogo__item">
 								<div class="stat_itogo_item__title">Финиши года</div>
 
-								<div class="stat_num_list">
+								
 						
 									<div class="stat_flex stat_flex-finish">
 										<div class="stat_flex_part">
@@ -704,7 +629,7 @@
 									</div>
 
 									
-								</div>
+								
 							</div>
 						</div>
 
