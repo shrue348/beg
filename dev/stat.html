@@ -318,45 +318,44 @@
 								<canvas id="chart-area" class="stat_itogo__bubble"></canvas>
 
 								<script>
-								var data = {
-									labels: [
-										"мужчин",
-										"женщин"
-									],
-									datasets: [
-									{
-										data: [300, 50],
-										backgroundColor: [
-											"#868dac",
-											"#fab217"
+									var data = {
+										labels: [
+											"мужчин",
+											"женщин"
 										],
-										hoverBackgroundColor: [
-											"#b6bdcc",
-											"#fad237"
-										]	
-									}]
-								};
+										datasets: [
+										{
+											data: [300, 50],
+											backgroundColor: [
+												"#868dac",
+												"#fab217"
+											],
+											hoverBackgroundColor: [
+												"#b6bdcc",
+												"#fad237"
+											]	
+										}]
+									};
 
-								var options = { 
-									cutoutPercentage:40,
-									legend: {
-								        display: true,
-								        position: 'bottom',
-								        labels: {
-								            fontColor: 'rgb(255, 255, 255)',
-								            fontStyle: 'bold',
-								            padding: 20
-								        }
-								    }
-								};
+									var options = { 
+										cutoutPercentage:40,
+										legend: {
+									        display: true,
+									        position: 'bottom',
+									        labels: {
+									            fontColor: 'rgb(255, 255, 255)',
+									            fontStyle: 'bold',
+									            padding: 20
+									        }
+									    }
+									};
 
-								var ctx = document.getElementById("chart-area");
-								var myChart = new Chart(ctx,{
-								    type: 'doughnut',
-								    data: data,
-								    options: options
-								})
-
+									var ctx = document.getElementById("chart-area");
+									var myChart = new Chart(ctx,{
+									    type: 'doughnut',
+									    data: data,
+									    options: options
+									})
 								</script>
 
 							</div>
