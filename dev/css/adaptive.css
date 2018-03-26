@@ -101,8 +101,31 @@
 
 
 
+	.about > .wrapper > .row > .col-md-7.off-5 { width: 100%; margin-left: 0; }
+	.about_wrap { margin-left: 20px; margin-right: 20px; padding-right: 20px; padding-left: 20px; margin-top: 380px; }
+	.about h1 { margin-left: -50px; padding-left: 50px; margin-bottom: 50px; font-size: 32px; }
+	.about_img { height: 440px; top: 0; width: auto; max-width: 90vw; margin-left: -20px;}
+	.about_wrap .txt { padding-left: 0; }
+	.about_lists > .col-md-6 { width: 100%;}
+	.main_list__title-people { background: url(../img/main_list-people.png) no-repeat scroll left top  transparent; }
+
+	.about_lists > .col-md-6:first-child .main_list.main_list-people { margin-bottom: 70px; }
+	.main_list.main_list-people { max-width: 600px; }
 
 
+	.about_stat__list { flex-wrap: wrap; justify-content: center; }
+	.about_stat__item { flex: 0 0 34%; margin-bottom: 50px; }
+	.about_stat { padding-bottom: 45px; background-size: cover; }
+
+	.about_orange > .wrapper > .row > .col-md-4,
+	.about_orange > .wrapper > .row > .col-md-8 { width: 100%; }
+	.about_orange__title { margin-right: 0; }
+
+	.about_style > .wrapper > .row > .col-md-7 { width: 100%;  }
+	.about_style > .wrapper > .row > .col-md-5 { width: 100%;  }
+	.about_style__item { margin-bottom: 30px; }
+
+	.about_style__title { font-size: 36px; }
 
 }
 
@@ -200,6 +223,29 @@
 	.stat_flex_part-30 { flex: 0 0 50%; }
 	.stat_orange { font-size: 12px; }
 	.stat_orange.stat_orange-big { font-size: 50px; }
+
+
+	.about_img { max-width: 90vw; height: auto; }
+	.about h1 { font-size: 28px; }
+
+	.main_list__title.main_list__title-people { background-size: 100% 100%;}
+
+	.about_stat__item { flex: 0 0 50%; }
+	.about_stat_item__2 { font-size: 33px; }
+	.main_list__title-people { padding-right: 30px; padding-top: 20px; }
+	.main_list.main_list-people > .main_list__list { padding-left: 20px; padding-top: 200px; }
+	.main_list.main_list-people .main_list__about { position: initial; left: initial; top: initial; width: 100%; text-align: center; }
+	.main_list__about img { position: absolute; top: -25px; left: 40px; z-index: 3; }
+	.main_list__about > .title { margin-top: 20px; }
+
+
+	.about_style > .wrapper > .row > .col-md-7 > .row { display: flex; justify-content: center; flex-wrap: wrap; align-items: stretch; }
+	.about_style > .wrapper > .row > .col-md-7 > .row > .col-md-4 { flex: 0 0 40%; margin: 0 auto 30px; }
+	.about_style__item { margin-bottom: 0; box-sizing: border-box; height: 100%; }
+
+
+
+
 }
 
 @media (max-width: 680px) {
@@ -208,8 +254,10 @@
 	.main_list__title-starts { background: url(../img/main_list-starts.png) no-repeat scroll left top transparent; }
 
 	.article_wrap { margin-top: 300px; }
-	.article__img { margin-top: -50%; margin-bottom: -80px; }
+	.article__img { margin-top: -50%; margin-bottom: -80px;  }
 	.article h1 { margin-right: -35px; margin-bottom: 40px; }
+
+	.about_wrap { margin-top: 350px; }
 
 }
 
@@ -219,6 +267,7 @@
 
 
 	.article_wrap { margin-top: 300px; }
+	.about_wrap { margin-top: 300px; }
 
 }
 
@@ -258,6 +307,7 @@
 	.contacts_map { height: 350px; top: -310px;}
 
 	.article_wrap { margin-top: 250px; }
+	.about_wrap { margin-top: 250px; }
 
 	.main_list__title-women + .main_list__list { padding-left: 15px; padding-right: 15px; }
 	.main_list__title-men + .main_list__list { padding-left: 15px; padding-right: 15px; }
@@ -269,11 +319,50 @@
 
 	.main_list-women .col-md-4:nth-child(1) .main_list_records__distance:before,
 	.main_list-men .col-md-4:nth-child(1) .main_list_records__distance:before { position: absolute; left: -39px; top: 0; }
+
+	.about_style > .wrapper > .row > .col-md-7 > .row > .col-md-4 { flex: 0 0 50%;}
+
+	.about h1,
+	.article h1,
+	.about_orange__title,
+	.main_blue__title,
+	.widget_life__title,
+	.stat_itogo__title,
+	.contacts h1,
+	.about_stat__title,
+	.about_style__title,
+	.main_blue__map_title { font-size: 24px; }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 376px) {
 	.main_list_records__time { flex: 0 0 100%; }
 	.main_list_records__distance { flex: 0 0 100%; }
+
+
+	.main_list__title.main_list__title-people { padding-left: 90px; }
+	.main_list__about img { width: 70px; top: 20px; left: 5px; }
+
+	.article_wrap { margin-top: 200px; margin-left: 0; margin-right: 0; }
+	.about_wrap { margin-top: 200px; margin-left: 0; margin-right: 0; }
+
+	.about h1,
+	.article h1,
+	.about_orange__title,
+	.main_blue__title,
+	.widget_life__title,
+	.stat_itogo__title,
+	.contacts h1,
+	.about_stat__title,
+	.about_style__title,
+	.main_blue__map_title { font-size: 22px; }
+
+	.article__img { margin-bottom: -15px; }
+
+	.stat_header,
+	.news_header { margin-top: 0; }
+
+	.about_stat__item { flex: 0 0 75%; }
+	.about_style__item .title { font-size: 17px; }
 
 
 
