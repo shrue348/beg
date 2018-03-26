@@ -660,6 +660,7 @@ body { background: url(../img/header_bg.png) no-repeat scroll center top transpa
 .stat_flex_part-60 { flex: 0 0 60%; }
 .stat_flex-big > div { margin: 32px 0; }
 
+.stat_flex-14 { margin-bottom: 14px; }
 
 
 
