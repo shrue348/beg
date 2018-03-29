@@ -144,6 +144,8 @@
 
 	.main_banner__title { font-size: 27.5px; }
 
+	.main_sub__list { display: block; position: relative; box-shadow: none; top: 0; left: 0; text-align: center; }
+
 	.header { -ms-flex-pack: initial; justify-content: initial; margin-top: 18px; }
 	.header__slogan { display: none; }
 	.header__phone { margin-left: auto; margin-top: 26px;}
